@@ -27,7 +27,7 @@ In your `Models` extends from:
 * Hoyvoy\CrossDatabase\Eloquent\Model
 
 # Supported PHP Versions
-* \>=7.1.3
+* \>=8.2.0
 
 # Supported Databases
 * MySQL
