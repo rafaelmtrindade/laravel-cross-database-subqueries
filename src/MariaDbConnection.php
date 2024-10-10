@@ -14,6 +14,7 @@ class MariaDbConnection extends IlluminateMariaDbConnection implements CanCrossD
      */
     protected function getDefaultQueryGrammar()
     {
-        return $this->withTablePrefix(new MariaDbQueryGrammar());
+        ($grammar = new MariaDbQueryGrammar())->setConnection($this);
+        return $this->withTablePrefix($grammar);
     }
 }
